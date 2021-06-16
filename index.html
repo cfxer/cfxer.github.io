@@ -1,0 +1,214 @@
+
+<html>
+
+<head>
+    
+<script type="text/javascript">   
+loopy()   
+function loopy() {   
+var sWord =""  
+while (sWord != "2020520") {//设置密码
+sWord = prompt("输入正确密码才能查看!")   
+}   
+alert("欢迎访问")   
+}   
+</script>
+
+<meta charset="UTF-8">
+
+<title>田云飞</title>
+
+<link rel="stylesheet" type="text/css" href="./css/mystyle.css">
+<link href="tyf_title.ico" rel="icon" type="image/x-ico">
+
+<!--照片显示隐藏-->
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#img").fadeTo("slow",0);
+  });
+});
+$(document).ready(function(){
+  $("#show").click(function(){
+    $("#img").fadeTo("slow",1);
+  });
+});
+</script>
+
+
+<!--打印-->
+<script language="javascript">
+function preview(oper){
+    if (oper < 10){
+    bdhtml=window.document.body.innerHTML;//获取当前页的html代码
+    sprnstr="<!--startprint"+oper+"-->";//设置打印开始区域
+    eprnstr="<!--endprint"+oper+"-->";//设置打印结束区域
+    prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18); //从开始代码向后取html
+    prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));//从结束代码向前取html
+    window.document.body.innerHTML=prnhtml;
+    window.print();
+    window.document.body.innerHTML=bdhtml;
+    } 
+    else {
+        window.print();
+    }
+}
+</script>
+
+
+
+</head>
+ 
+<body>
+    
+<!--startprint1-->
+ 
+	<table border="5" align="center" cellpadding="20" width="1000">
+		<tr>
+			<th colspan="7" bgcolor="#5CACEE"><font size="100%">个人简介</font></th>
+		</tr>
+<tr>
+    <th bgcolor="#5CACEE">姓名</th>
+    <td align="center">田云飞</td>
+    <th bgcolor="#5CACEE">年龄</th>
+    <td align="center">27</td>
+    <th bgcolor="#5CACEE">民族</th>
+    <td align="center">汉</td>
+    <td rowspan="3" width="100">
+        <div id="img" style="display:ture">
+        
+        <img src="./tyf.jpg" width="140" height="189" alt="初入北京时的我" align="center"/>
+    </div>
+    
+<input type="button" id="hide" value="隐藏" onclick="hide();"
+style="width: 65px; /* 宽度 */ 
+ height: 30px; /* 高度 */ 
+ border-width: 0px; /* 边框宽度 */ 
+ border-radius: 3px; /* 边框半径 */ 
+ background:#5CACEE; /* 背景颜色 */ 
+ cursor: pointer; /* 鼠标移入按钮范围时出现手势 */ 
+ outline: none; /* 不显示轮廓线 */ 
+ font-family: Microsoft YaHei; /* 设置字体 */ 
+ color: white; /* 字体颜色 */
+ font-size: 17px; /* 字体大小 */}>" >
+ 
+ <input type="button" id="show" value="显示" onclick="show();"
+style="width: 65px; /* 宽度 */ 
+ height: 30px; /* 高度 */ 
+ border-width: 0px; /* 边框宽度 */ 
+ border-radius: 3px; /* 边框半径 */ 
+ background:#5CACEE; /* 背景颜色 */ 
+ cursor: pointer; /* 鼠标移入按钮范围时出现手势 */ 
+ outline: none; /* 不显示轮廓线 */ 
+ font-family: Microsoft YaHei; /* 设置字体 */ 
+ color: white; /* 字体颜色 */
+ font-size: 17px; /* 字体大小 */}>" >
+ 
+<script>
+var img=document.getElementById('img');
+function show(){
+if(img.style.display=='none'){
+img.style.display='';
+}else{
+img.style.display='none';
+}
+}
+</script>
+        
+        </td>
+</tr>
+ 
+<tr>
+    <th bgcolor="#5CACEE">出生日期</th>
+	<td align="center">1993.03.04</td>
+	<th bgcolor="#5CACEE">籍贯</th>
+    <td align="center">河南</td>
+    <th bgcolor="#5CACEE">学历</th>
+    <td align="center">专科</td>
+</tr>
+ 
+<tr>
+    <th bgcolor="#5CACEE">专业</th>
+    <td align="center">动漫设计与制作</td>
+    <th bgcolor="#5CACEE">毕业学校</th>
+    <td align="center">郑州理工职业技术学院</td>
+    <th bgcolor="#5CACEE">邮箱</th>
+    <td align="center"><a href="1144850957@qq.com">1144850957@qq.com</a></td>
+</tr> 
+
+<tr align="center">
+    <th rowspan="2" height="160" bgcolor="#5CACEE">学习经历</th>
+	
+	<th height="80" rowspan="2" bgcolor="#87CEFF">时间</th>
+	<td>2013.9-2016.8</td>
+	<th height="80" rowspan="2" bgcolor="#87CEFF">毕业学校</th>
+    <td>郑州理工职业技术学院</td>
+	<th height="80" rowspan="2" bgcolor="#87CEFF">课程</th>
+    <td>动漫设计与制作</td>
+</tr>
+ <tr align="center">
+	<td>2015.12-2016.6</td>
+    <td>火星时代</td>
+    <td>影视特效班</td>
+</tr>
+
+<tr>
+    <th rowspan="1" height="160" bgcolor="#5CACEE">工作经验</th>
+    <td colspan="6" align="center">
+   <p>2016.8-2017.3--------<font color="red">中影年年(北京)文化传媒有限公司</font>-------<b>场景特效师</b></p>
+   <p>2017.3-2019.8--------<font color="red">北京若森数字科技有限公司</font>-------------<b>角色特效师</b></p>
+   <p>2019.8-至今-------------------<font color="red">追光动画</font>-----------------------<b>角色特效师</b></p>
+    </td>
+</tr>
+ 
+<tr>
+    <th height="160" bgcolor="#5CACEE" rowspan="1">参与项目</th>
+    <td colspan="3" align="center">
+	<p>《勇者大冒险》</p>
+	<p>《血色苍穹》</p>
+	<p>《生死回放》</p>
+    <p>《画江湖之换世门生》</p>
+    <p>《画江湖之不良人Ⅲ》</p>
+    <p>《新神榜：哪吒重生》</p>
+    <p>《白蛇2：青蛇劫起》</p>
+	<td bgcolor="#5CACEE" align="center">微信<br><font size="5em">( <font color="#20ef3a"><b>tyf3057</b></font> )</font></td>
+	<td colspan="2"><img src="./wechat.jpg" width="300" height="300" alt="微信二维码" align="center">
+	</td>
+</tr>
+ 
+
+ 
+<tr>
+     <th height="160" bgcolor="#5CACEE">职业技能</th>
+     <td colspan="6" align="center">
+    <p>Maya：nCloth、nHair、Qualoth</p>
+    <p>Houdini:Vellum</p>
+    <p><i>制作角色布料并模拟物理运动及曲线动力学解算。</i></p>
+</tr>
+
+<!--endprint1-->
+
+<tr>
+     <th height="100" bgcolor="#5CACEE">作品</th>
+     <td colspan="6" align="center">
+    <p><del>初毕业个人作品<a href="http://tyf.cfxer.com/download/hxsd_1512.mov">(点击下载)</a></del></p>
+    <p>若森之后个人作品<a href="http://tyf.cfxer.com/download/rocen_cfx.mp4">(点击下载)</a></p>
+</tr>
+
+
+    <input type=button name='button_export' value='打印'  onclick=preview(1) 
+    style="width: 70px; /* 宽度 */ 
+ height: 30px; /* 高度 */ 
+ border-width: 0px; /* 边框宽度 */ 
+ border-radius: 3px; /* 边框半径 */ 
+ background:#5CACEE; /* 背景颜色 */ 
+ cursor: pointer; /* 鼠标移入按钮范围时出现手势 */ 
+ outline: none; /* 不显示轮廓线 */ 
+ font-family: Microsoft YaHei; /* 设置字体 */ 
+ color: white; /* 字体颜色 */
+ font-size: 17px; /* 字体大小 */">
+
+</body>
+ 
+</html>

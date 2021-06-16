@@ -1,0 +1,27 @@
+body{
+	/*background: url(../img.jpg);
+	background-size:cover*/
+	background-color: #999;
+	
+    }
+ 
+table{
+	background: url(../pattern.png);
+
+   }  
+ p{
+ 	 font-size:20px;
+   }  
+i{
+ 	 font-size:10px;
+   }  
+ h4{
+ 	font-size: 15px;
+ 	padding-left: 26px;
+   }
+td{
+	font-size:15px;
+	}
+th{
+	font-size:15px;
+}
